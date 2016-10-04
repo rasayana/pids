@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+
+<TableView fx:id="eventView" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pids.controller.EventLogController">
+   <columns>
+      <TableColumn prefWidth="175.0" fx:id="timeClm" text="%ui.eventlog.time"/>
+      <TableColumn prefWidth="75.0" fx:id="severityClm" text="%ui.eventlog.severity"/>
+      <TableColumn prefWidth="75.0" fx:id="zoneClm" text="%ui.eventlog.zone"/>
+      <TableColumn prefWidth="75.0" fx:id="handledClm" text="%ui.eventlog.handled"/>
+   </columns>
+</TableView>

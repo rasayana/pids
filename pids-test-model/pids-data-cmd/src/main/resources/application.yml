@@ -1,0 +1,12 @@
+#spring:
+#    data:
+#        mongodb:
+#            uri: mongodb://localhost:27017/pids
+
+pids:
+    service:
+        url: http://localhost:8081
+
+multipart:
+    maxFileSize: 3Mb
+    maxRequestSize: 20Mb

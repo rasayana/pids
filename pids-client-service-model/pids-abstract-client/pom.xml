@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>pids-abstract-client</artifactId>
+    <packaging>jar</packaging>
+    <name>pids-abstract-client</name>
+	<parent>
+		<groupId>pids</groupId>
+		<artifactId>pids-client-service-model</artifactId>
+		<version>0.0.0.1</version>
+	</parent>
+	<dependencies>
+        <dependency>
+			<groupId>prabs.common</groupId>
+            <artifactId>fx-util</artifactId>
+			<version>0.0.0.1</version>
+        </dependency>
+        <dependency>
+			<groupId>${project.groupId}</groupId>
+            <artifactId>pids-image-service</artifactId>
+			<version>${project.version}</version>
+        </dependency>
+        <dependency>
+			<groupId>${project.groupId}</groupId>
+            <artifactId>pids-image</artifactId>
+			<version>${project.version}</version>
+        </dependency>
+        <dependency>
+			<groupId>prabs.common</groupId>
+            <artifactId>fx-img-video-resources</artifactId>
+			<version>0.0.0.1</version>
+        </dependency>
+	</dependencies>
+</project>

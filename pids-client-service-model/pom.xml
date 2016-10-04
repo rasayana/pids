@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>pids-client-service-model</artifactId>
+    <packaging>pom</packaging>
+    <name>pids-client-service-model</name>
+	<parent>
+		<groupId>pids</groupId>
+		<artifactId>pids</artifactId>
+		<version>0.0.0.1</version>
+	</parent>
+	<modules>
+		<module>pids-image-service</module>
+		<module>pids-camera-service</module>
+		<module>pids-service</module>
+		<module>pids-abstract-client</module>
+		<module>pids-client</module>
+		<module>pids-abstract-rest-client</module>
+		<module>pids-rest-client</module>
+	</modules>
+</project>

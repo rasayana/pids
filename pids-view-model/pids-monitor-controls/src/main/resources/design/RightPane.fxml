@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import pids.controls.BorderedPane?>
+
+<SplitPane centerShape="true" xmlns:fx="http://javafx.com/fxml/1" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" fx:controller="pids.controller.RightPaneController">
+	<items>
+		<SplitPane dividerPositions="0.33488372093023255, 0.6558139534883721" layoutX="10.0" layoutY="10.0" prefHeight="160.0" prefWidth="200.0">
+			<items>
+				<SplitPane orientation="VERTICAL" dividerPositions="0.5, 0.5" layoutX="10.0" layoutY="10.0" prefHeight="160.0" prefWidth="275.0" maxWidth="350" minWidth="200">
+				   <items>
+				      <BorderedPane title="%ui.rightpane.caption1" minHeight="100.0" minWidth="0.0" prefHeight="235.0" prefWidth="275.0">
+				      	<HBox centerShape="true" alignment="CENTER" spacing="10">
+				      		<children>
+				      			<VBox centerShape="true" alignment="CENTER" spacing="10">
+						      		<children>
+								        <Button text="Configure" />
+								        <Button text="Option" />
+								        <Button text="Caliberation" />
+						      		</children>
+				      			</VBox>
+				      			<VBox centerShape="true" alignment="CENTER" spacing="10">
+						      		<children>
+								        <Button text="Report" />
+								        <Button text="Settings" />
+								        <Button text="Site Info" />
+						      		</children>
+				      			</VBox>
+				      		</children>
+				      	</HBox>
+				      </BorderedPane>
+				      <BorderedPane title="%ui.rightpane.caption2" minHeight="100.0" minWidth="0.0" prefHeight="235.0" prefWidth="275.0">
+				      	<HBox centerShape="true" alignment="CENTER" spacing="10">
+				      		<children>
+				      			<VBox centerShape="true" alignment="CENTER" spacing="10">
+						      		<children>
+								        <Button text="Camera1" styleClass="orangeButton"/>
+								        <Button text="Camera2" styleClass="orangeButton"/>
+								        <Button text="Camera3" styleClass="orangeButton"/>
+						      		</children>
+				      			</VBox>
+				      			<VBox centerShape="true" alignment="CENTER" spacing="10">
+						      		<children>
+								        <Button text="Camera4" styleClass="orangeButton"/>
+								        <Button text="Camera5" styleClass="orangeButton"/>
+								        <Button text="Camera6" styleClass="orangeButton"/>
+						      		</children>
+				      			</VBox>
+				      		</children>
+				      	</HBox>
+				      </BorderedPane>
+				   </items>
+				</SplitPane>
+				<BorderedPane title="%ui.rightpane.caption3" fx:id="mapContainer" minHeight="0.0" minWidth="0.0" prefHeight="235.0" prefWidth="178.0"/>
+			</items>
+		</SplitPane>
+		<SplitPane dividerPositions="0.46733668341708545" maxHeight="330.0" orientation="VERTICAL" prefHeight="330.0" prefWidth="160.0">
+			<items>
+			   <SplitPane dividerPositions="0.33488372093023255, 0.6558139534883721" layoutX="10.0" layoutY="10.0" maxHeight="160.0" prefHeight="160.0" prefWidth="200.0">
+			     <items>
+					<TabPane prefHeight="389.0" prefWidth="247.0" tabClosingPolicy="UNAVAILABLE" style="-fx-background-color: white;">
+					  <tabs>
+					    <Tab fx:id="eventPane" text="%ui.rightpane.caption4"/>
+					    <Tab text="%ui.rightpane.caption5"/>
+					  </tabs>
+					</TabPane>
+					<BorderedPane fx:id="alarmInfoContaainer" title="%ui.rightpane.caption6" minHeight="0.0" prefWidth="275.0" minWidth="250" maxWidth = "450"/>
+			     </items>
+			   </SplitPane>
+			   <SplitPane dividerPositions="0.1, 0.5" minHeight="90.0" prefHeight="160.0" prefWidth="200.0">
+			      <items>
+			         <AnchorPane />
+			         <AnchorPane />
+			      </items>
+			   </SplitPane>
+			</items>
+		</SplitPane>
+	</items>
+</SplitPane>

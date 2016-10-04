@@ -1,0 +1,9 @@
+pids:
+    service:
+        url: http://localhost:8081
+app:
+    ui:
+        title: Perimeter Intrusion Detecting System
+locale:
+    language: en
+    country: EN

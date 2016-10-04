@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox id="loginPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="10"
+	xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pids.controller.AlarmInfoController">
+   <children>
+   		<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+		   <children>
+		      <Label text="%ui.eventlog.time"/>
+		      <Label text="%ui.eventlog.severity"/>
+		      <Label text="%ui.eventlog.zone"/>
+		   </children>
+   		</VBox>
+   		<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+		   <children>
+		      <Label fx:id="lblTime"/>
+		      <Label fx:id="lblSeverity"/>
+		      <Label fx:id="lblZone"/>
+		   </children>
+   		</VBox>
+   </children>
+</HBox>

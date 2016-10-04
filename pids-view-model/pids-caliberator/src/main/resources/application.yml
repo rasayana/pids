@@ -1,0 +1,9 @@
+pids:
+    service:
+        url: http://localhost:8081
+app:
+    ui:
+        title: PIDS Caliberator
+locale:
+    language: en
+    country: EN

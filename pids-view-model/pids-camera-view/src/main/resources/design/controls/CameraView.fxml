@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.media.MediaPlayer?>
+<?import javafx.scene.media.Media?>
+
+<fx:root xmlns:fx="http://javafx.com/fxml/1" type="MediaView">
+	<mediaPlayer>
+		<MediaPlayer autoPlay="true">
+			<media>
+				<Media fx:id="media"/>
+			</media>
+		</MediaPlayer>
+	</mediaPlayer>
+</fx:root>

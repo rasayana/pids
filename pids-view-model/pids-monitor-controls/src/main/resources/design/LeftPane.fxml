@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import pids.controls.BorderedPane?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.geometry.Insets?>
+
+<SplitPane xmlns:fx="http://javafx.com/fxml/1" dividerPositions="0.5f, 0.3f, 0.2f, 0.1f" orientation="VERTICAL" prefWidth="310" minWidth="275" maxWidth="350"
+	fx:controller="pids.controller.LeftPaneController">
+    <items>
+    	<BorderedPane fx:id="cameraView" title="%ui.leftpane.caption1" prefHeight="280.0" prefWidth="200.0" minHeight="155.0"/>
+    	<BorderedPane title="%ui.leftpane.caption2" minHeight="155.0" prefHeight="155.0" minWidth="155.0">
+			<Label fx:id="instructionlbl" maxWidth="265" wrapText="true"/>
+<!--
+    		<VBox spacing="10" alignment="CENTER">
+				<children>
+		    		<ScrollPane maxHeight="-Infinity"  minHeight="-Infinity" minWidth="-Infinity"  pannable="true" hbarPolicy="NEVER" vbarPolicy="NEVER" VBox.vgrow="ALWAYS">
+		    			<content>
+							<Label fx:id="instructionlbl" maxWidth="265" wrapText="true"/>
+						</content>
+					</ScrollPane>
+					<HBox prefHeight="155.0" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+						<children>
+				    		<Button text="%ui.locale1"/>
+				    		<Button text="%ui.locale2"/>
+				    		<Button text="%ui.locale3"/>
+						</children>
+					</HBox>
+				</children>
+			</VBox>
+ -->
+     	</BorderedPane>
+    	<BorderedPane fx:id="mapView" title="%ui.leftpane.caption3" minHeight="180.0" prefHeight="180.0" prefWidth="200.0">
+    	</BorderedPane>
+		<TabPane prefHeight="209.0" prefWidth="247.0" tabClosingPolicy="UNAVAILABLE" style="-fx-background-color: white;">
+		  <tabs>
+		    <Tab text="%ui.leftpane.caption4">
+		    	<content>
+					<AnchorPane prefHeight="200" prefWidth="320">
+					    <children>
+					        <Button layoutX="126" layoutY="90" text="Click Me!" />
+					    </children>
+					</AnchorPane>
+		    	</content>
+		    </Tab>
+		    <Tab text="%ui.leftpane.caption5"/>
+		    <Tab text="%ui.leftpane.caption6"/>
+		    <Tab text="%ui.leftpane.caption7"/>
+		  </tabs>
+		</TabPane>
+    </items>
+</SplitPane>

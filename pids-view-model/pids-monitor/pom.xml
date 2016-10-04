@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>pids-monitor</artifactId>
+	<packaging>jar</packaging>
+	<name>pids-monitor</name>
+	<parent>
+		<groupId>pids</groupId>
+		<artifactId>pids-view-model</artifactId>
+		<version>0.0.0.1</version>
+	</parent>
+    <properties>
+        <mainClass>pids.Monitor</mainClass>
+    </properties>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+    <dependencies>
+        <dependency>
+			<groupId>${project.groupId}</groupId>
+            <artifactId>pids-rest-client</artifactId>
+			<version>${project.version}</version>
+        </dependency>
+        <dependency>
+			<groupId>${project.groupId}</groupId>
+            <artifactId>pids-monitor-controls</artifactId>
+			<version>${project.version}</version>
+        </dependency>
+        <dependency>
+			<groupId>prabs.common</groupId>
+            <artifactId>fx-img-video-resources</artifactId>
+			<version>0.0.0.1</version>
+        </dependency>
+    </dependencies>
+</project>
